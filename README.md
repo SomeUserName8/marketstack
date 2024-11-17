@@ -18,7 +18,8 @@ db: postgres
 
 В airflow добавлены проверки на наличие пустых значений полей, которые должны быть ключами
 
-![image](https://github.com/user-attachments/assets/a4ba63c8-02a8-438f-8bc1-e76e025eab3d)
+![image](https://github.com/user-attachments/assets/4872e1f4-8e32-4beb-92cd-8c9f083f3c19)
+
 
 
 
