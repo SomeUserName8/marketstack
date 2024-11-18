@@ -75,7 +75,7 @@ CREATE TABLE dds.Sat_Stock_Details (
 
 -- Ссылки
 CREATE TABLE dds.Link_Company_Exchange (
-	hk_Link_Company_Exchange uuid,
+	hk_Link_Company_Exchange uuid PRIMARY KEY,
     hk_Company_ID uuid REFERENCES dds.Hub_Company(hk_Company_ID),
     hk_Exchange_ID uuid REFERENCES dds.Hub_Exchange(hk_Exchange_ID),
     load_dt timestamp,
@@ -83,7 +83,7 @@ CREATE TABLE dds.Link_Company_Exchange (
 );
 
 CREATE TABLE dds.Link_Stock_Exchange (
-	hk_Link_Stock_Exchange uuid,
+	hk_Link_Stock_Exchange uuid PRIMARY KEY,
     hk_Stock_ID uuid REFERENCES dds.Hub_Stock(hk_Stock_ID),
     hk_Exchange_ID uuid REFERENCES dds.Hub_Exchange(hk_Exchange_ID),
     load_dt timestamp,
